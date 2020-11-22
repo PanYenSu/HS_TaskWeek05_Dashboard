@@ -1,0 +1,22 @@
+.sideNav {
+    height: 800px;
+    padding: 32px;
+    &-logo {
+        margin-bottom: 32px;
+    }
+    &-user {
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 24px;
+            
+        }
+        .nav-link {
+            // padding: 0;
+        }
+        p:nth-last-child(1) {
+            font-size: 14px;
+            color: #0000009A;
+        }
+    }   
+}

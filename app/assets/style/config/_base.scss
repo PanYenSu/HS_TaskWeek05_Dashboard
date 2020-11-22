@@ -3,14 +3,15 @@
 	box-sizing: border-box;
 }
 html, body {
-    // width: 100%;
-    // height: 100%;
+    width: 100%;
+    height: 100%;
     font-size: 16px;
     font-family: Lato, sans-serif;
     // transition: 0.5s all;
 }
 a {
     text-decoration: none;
+    
     // :hover {
     //     position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
     //     top: 1px;

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -14,11 +15,61 @@
   <div class="container-fluid">
 
     <div class="row">
-      <nav class="col-4">
-        
-      </nav>
+      <nav class="sideNav col-3 bg-primary01 d-flex flex-column justify-content-between">
+        <div class="">
+          <img class="sideNav-logo" src="/assets/images/logo-ANSWER.svg" alt="">
+        <ul class="nav text-left">
+          <li class="nav-item">
+              <a class="nav-link active pl-0" href="#">
+                <span class="material-icons mr-3">
+                dashboard
+                </span>Dashboard</a>         
+          </li>
+          <li class="nav-item">            
+            <a class="nav-link active pl-0" href="#">
+              <span class="material-icons mr-3">
+              question_answer
+              </span>Question</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pl-0" href="#">
+              <span class="material-icons mr-3">
+                assignment
+                </span>Assignment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pl-0" href="#">
+              <span class="material-icons mr-3">
+                video_library
+              </span>Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pl-0" href="#">
+              <span class="material-icons mr-3">
+                people_alt
+              </span>Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active disabled pl-0" href="#">
+              <span class="material-icons mr-3">
+                settings
+              </span>Settings</a>
+          </li>
+        </ul>
 
-      <main class="col-8 container">
+        </div>
+        
+        <div class="sideNav-user d-flex align-items-center">
+          <img class="mr-3" src="/assets/images/andychen.jpeg" alt="">
+          <div class="sideNav-user-info">
+            <p class="pb-1 m-0">Andy Chen</p>
+            <p class="m-0 ">andy0401@mail.com</p>
+          </div>
+        </div>
+      </nav>
+      
+
+      <main class="col-9 container">
         <%- contents %>
       </main>
     </div>

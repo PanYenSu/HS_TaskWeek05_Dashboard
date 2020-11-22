@@ -1,3 +1,15 @@
+@mixin breakpoint($point) {
+	@if $point == pad {
+		// @media only screen and(max-width: 992px) {
+        @media (max-width: 992px) {
+			@content;
+		}
+	} @else if $point == phone {
+		@media (max-width: 767px) {
+			@content;
+		}
+	}
+}
 // max-width = 列寬*12(列)+間隔*11
 // max-width 的單位不要用 %
 .container {
@@ -56,7 +68,7 @@ $properties: (
 @each $property, $property-value in $properties {
   @for $i from 1 through 10 {
     .#{$property}-#{$i} {
-      #{$property-value}: #{$i}px*8;
+      #{$property-value}: #{$i*8}px;
     }
   }
 }

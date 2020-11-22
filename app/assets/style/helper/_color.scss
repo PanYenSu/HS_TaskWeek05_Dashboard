@@ -1,6 +1,6 @@
 .text {
-    &-primary {
-		color: $primary;
+    &-primary01 {
+		color: $primary01;
 	}
 	&-danger {
 		color: $danger;
@@ -17,8 +17,8 @@
 }
 
 .bg {
-	&-primary {
-		background-color: $primary;
+	&-primary01 {
+		background-color: $primary01;
     }
     &-secondary {
 		background-color: $secondary;
@@ -32,4 +32,8 @@
 	&-black {
 		background-color: $black;
 	}
+}
+
+.active {
+	color: #121212;
 }
