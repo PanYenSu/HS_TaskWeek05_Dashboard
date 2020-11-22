@@ -1,5 +1,7 @@
 # 網頁切版直播班 Gulp 範例
 
+https://panyensu.github.io/HS_TaskWeek05_Dashboard/
+
 ## 指令列表
 
 - `gulp` - 執行開發模式(會開啟模擬瀏覽器並監聽相關檔案)
