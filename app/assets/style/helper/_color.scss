@@ -1,0 +1,35 @@
+.text {
+    &-primary {
+		color: $primary;
+	}
+	&-danger {
+		color: $danger;
+    }
+    &-secondary {
+		color: $secondary;
+	}
+	&-light{
+		color: $light;
+	}
+	&-white {
+		color: $white;
+	}
+}
+
+.bg {
+	&-primary {
+		background-color: $primary;
+    }
+    &-secondary {
+		background-color: $secondary;
+	}
+	&-light{
+		background-color: $light;
+	}
+	&-danger {
+		background-color: $danger;
+	}
+	&-black {
+		background-color: $black;
+	}
+}

@@ -1,23 +1,14 @@
-$color: #00cc99;
+// @import 'config/reset';
+@import 'config/variables';
+@import 'config/base';
+@import 'config/utility';
+@import 'config/typography';
+@import 'helper/display';
+@import 'helper/color';
+@import 'helper/hidetext';
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+
+
+// wendy https://github.com/Wendy03/glasses_webLayout/tree/main/scss
