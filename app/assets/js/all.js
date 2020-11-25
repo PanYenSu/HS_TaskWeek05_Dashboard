@@ -1,5 +1,23 @@
+// const { urlencoded } = require("express");
+
 console.log('Hello!');
 
 $(document).ready(() => {
   console.log('HesSchool Hello!');
+
+  $('.nav-item')
+    .find('a')
+    .each(function() {
+      $(this).toggleClass(
+        'nav-link--active',
+        $(this).attr('href') == url.split('/')[1]
+      );
+    });
+
+      // $('.nav-link').toggleClass(
+      //   'nav-link--active',
+      //   $(this).attr('href') == url.split('/')[1]
+      // );
+
+  
 });
