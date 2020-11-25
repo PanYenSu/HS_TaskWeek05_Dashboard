@@ -8,6 +8,7 @@ html, body {
   font-family: Lato, sans-serif; }
 
 a {
+  color: #000;
   text-decoration: none; }
 
 img {
@@ -20,6 +21,13 @@ input:focus {
 
 textarea {
   resize: none; }
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px; }
+
+.h7 {
+  font-size: 0.75rem; }
 
 .container {
   max-width: 918px;
@@ -289,68 +297,6 @@ textarea {
 .pr-10 {
   padding-right: 80px; }
 
-html, body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5; }
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2; }
-
-.h1 {
-  font-size: 8rem;
-  font-weight: bold; }
-  @media (max-width: 992px) {
-    .h1 {
-      font-size: 6rem; } }
-  @media (max-width: 767px) {
-    .h1 {
-      font-size: 4rem; } }
-
-.h2 {
-  font-size: 6rem;
-  font-weight: bold; }
-  @media (max-width: 992px) {
-    .h2 {
-      font-size: 4rem; } }
-  @media (max-width: 767px) {
-    .h2 {
-      font-size: 3rem; } }
-
-.h3 {
-  font-size: 4.5rem;
-  font-weight: bold; }
-  @media (max-width: 992px) {
-    .h3 {
-      font-size: 2.5rem; } }
-  @media (max-width: 767px) {
-    .h3 {
-      font-size: 2rem; } }
-
-.h4 {
-  font-size: 5.25rem; }
-  @media (max-width: 992px) {
-    .h4 {
-      font-size: 4rem; } }
-  @media (max-width: 767px) {
-    .h4 {
-      font-size: 2.5rem; } }
-
-.h5 {
-  font-size: 4rem; }
-  @media (max-width: 992px) {
-    .h5 {
-      font-size: 3rem; } }
-  @media (max-width: 767px) {
-    .h5 {
-      font-size: 2rem; } }
-
-.h6 {
-  font-size: 3rem; }
-  @media (max-width: 767px) {
-    .h6 {
-      font-size: 2rem; } }
-
 .d-flex {
   display: flex; }
 
@@ -410,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #650300; }
 
 .text-secondary {
-  color: #AA0601; }
+  color: #2A8356; }
 
 .text-light {
   color: #AA06010D; }
@@ -422,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #EDF4EE; }
 
 .bg-secondary {
-  background-color: #AA0601; }
+  background-color: #2A8356; }
 
 .bg-light {
   background-color: #AA06010D; }
@@ -448,5 +394,20 @@ h1, h2, h3, h4, h5, h6 {
   .sideNav-user p:nth-last-child(1) {
     font-size: 14px;
     color: #0000009A; }
+
+.nav-link--active {
+  color: #2A8356; }
+
+.nav-link:hover {
+  color: #2A8356; }
+
+.assignment-header {
+  margin-top: 32px; }
+
+.assignment-main {
+  margin-top: 44px; }
+
+p {
+  display: inline; }
 
 /*# sourceMappingURL=all.css.map */
