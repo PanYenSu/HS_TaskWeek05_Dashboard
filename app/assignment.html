@@ -2,11 +2,55 @@
 title: 首頁
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: assignment
 ---
+<header class="container d-flex row assignment-header p-0">
+  <div class="col-2 d-flex align-items-center p-0">
+    <h2 class="h4 m-0 ">Assignment</h2>
+  </div>
+  
+  <div class="assignment-navbar d-flex justify-content-between col-10 p-0">
+    <div class=" assignment-navbar-btn btn-group">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Courses
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">A...</a>
+        <a class="dropdown-item" href="#">B...</a>
+      </div>
+    </div>
 
-<h1>
-  這是一段話
-</h1>
+        <ul class="navbar-nav assignment-navbar-nav flex-row ">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="material-icons">
+                search
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="material-icons">
+                notifications_active
+                </span>
+            </a>
+          </li>
+          </ul>
+      
+      </div>
+</header>
+<main class="container assignment-main p-0">
+  <div class="assignment-main-navbar d-flex align-items-center justify-content-between p-0">
+    <div class=" assignment-navbar-btn btn-group ">
+      <button type="button" class="btn dropdown-toggle p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All (4)
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">01...</a>
+        <a class="dropdown-item" href="#">02...</a>
+      </div>
+    </div>
+    <p class="font-weight-lighter h7 text-center m-0">2 comments</p>
+  </div>
 
-<div class="box"></div>
+</main>

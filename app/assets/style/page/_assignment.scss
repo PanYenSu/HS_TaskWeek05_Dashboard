@@ -1,3 +1,13 @@
-.nav-link--active {
-    color: $secondary;
+.assignment {
+    &-header {
+        margin-top: 32px;
+    }
+    &-main {
+        margin-top: 44px;
+    }
+
+}
+
+p {
+    display: inline;
 }

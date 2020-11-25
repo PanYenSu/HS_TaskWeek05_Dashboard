@@ -1,4 +1,4 @@
-// const { urlencoded } = require("express");
+const url = window.location.pathname;
 
 console.log('Hello!');
 
@@ -13,11 +13,4 @@ $(document).ready(() => {
         $(this).attr('href') == url.split('/')[1]
       );
     });
-
-      // $('.nav-link').toggleClass(
-      //   'nav-link--active',
-      //   $(this).attr('href') == url.split('/')[1]
-      // );
-
-  
 });
