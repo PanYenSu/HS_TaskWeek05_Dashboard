@@ -14,7 +14,7 @@ $(document).ready(() => {
       );
     });
 
-    $('.list-group-item-link').click(function(){
-      $(this).addClass("list-group-item-action");
-    });
+    // $('.list-group-item-link').click(function(){
+    //   $(this).addClass("list-group-item-action");
+    // });
 });
