@@ -384,6 +384,8 @@ html, body {
 
 .sideNav {
   padding: 32px; }
+  .sideNav-logo {
+    margin-bottom: 32px; }
   .sideNav-user img {
     width: 40px;
     height: 40px;
@@ -391,8 +393,6 @@ html, body {
   .sideNav-user p:nth-last-child(1) {
     font-size: 14px;
     color: #0000009A; }
-  .sideNav-title {
-    height: 104px; }
 
 .nav-link--active {
   color: #2A8356; }
