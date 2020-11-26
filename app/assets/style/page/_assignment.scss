@@ -1,13 +1,44 @@
 .assignment {
     &-header {
-        margin-top: 32px;
+        margin-top: 26px;
+        
     }
+    &-navbar-nav {
+        .material-icons:nth-last-child(1){
+            margin-left: 26px;
+            // width: 24px;
+            // height: 24px;
+        }
+
+    }
+    
     &-main {
-        margin-top: 44px;
+        margin-top: 15px;
+        .list-group-item  {
+            border: 1px solid #CDDDCD;
+            &:hover {
+                background-color: #f8f8f8;
+            }
+            span:nth-child(1) {
+                padding: 12px 12px 0 12px;
+            } 
+            span:nth-child(2) {
+                padding: 4px 12px 12px 12px;
+            }           
+            &:nth-child(1) {            
+                background: $primary01;
+            }
+        }
     }
-
+    &-comments-nav {
+        background: $primary01;
+        border: 1px solid #CDDDCD;
+        padding: 12px;
+        h6 {
+            padding-top: 4px;
+        }
+    }
+    
 }
 
-p {
-    display: inline;
-}
+

@@ -383,10 +383,7 @@ html, body {
   color: #121212; }
 
 .sideNav {
-  height: 800px;
   padding: 32px; }
-  .sideNav-logo {
-    margin-bottom: 32px; }
   .sideNav-user img {
     width: 40px;
     height: 40px;
@@ -394,6 +391,8 @@ html, body {
   .sideNav-user p:nth-last-child(1) {
     font-size: 14px;
     color: #0000009A; }
+  .sideNav-title {
+    height: 104px; }
 
 .nav-link--active {
   color: #2A8356; }
@@ -402,12 +401,29 @@ html, body {
   color: #2A8356; }
 
 .assignment-header {
-  margin-top: 32px; }
+  margin-top: 26px; }
+
+.assignment-navbar-nav .material-icons:nth-last-child(1) {
+  margin-left: 26px; }
 
 .assignment-main {
-  margin-top: 44px; }
+  margin-top: 15px; }
+  .assignment-main .list-group-item {
+    border: 1px solid #CDDDCD; }
+    .assignment-main .list-group-item:hover {
+      background-color: #f8f8f8; }
+    .assignment-main .list-group-item span:nth-child(1) {
+      padding: 12px 12px 0 12px; }
+    .assignment-main .list-group-item span:nth-child(2) {
+      padding: 4px 12px 12px 12px; }
+    .assignment-main .list-group-item:nth-child(1) {
+      background: #EDF4EE; }
 
-p {
-  display: inline; }
+.assignment-comments-nav {
+  background: #EDF4EE;
+  border: 1px solid #CDDDCD;
+  padding: 12px; }
+  .assignment-comments-nav h6 {
+    padding-top: 4px; }
 
 /*# sourceMappingURL=all.css.map */

@@ -13,4 +13,8 @@ $(document).ready(() => {
         $(this).attr('href') == url.split('/')[1]
       );
     });
+
+    $('.list-group-item-link').click(function(){
+      $(this).addClass("list-group-item-action");
+    });
 });

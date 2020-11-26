@@ -1,7 +1,8 @@
 //color
 $primary01: #EDF4EE;
 $primary-dark: darken($primary01, 15%);
-$primary-light: darken($primary01, 75%);
+$primary-light: lighten($primary01, 75%);
+
 $secondary: #2A8356;
 $light: #AA06010D;
 $danger: #650300;
