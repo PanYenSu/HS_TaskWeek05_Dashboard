@@ -33,6 +33,41 @@
 		background-color: $black;
 	}
 }
+.badge {
+	&-primary01 {
+		color: $secondary;
+    	background-color: $primary01;
+	}
+}
+
+.border {
+	&-primary01 {
+		border: 1px solid $primary01;
+	}
+	&-dark {
+		border: 1px solid $primary-dark;
+	}
+	&-secondary02 {
+		border: 1px solid $secondary02;
+	}
+}
+.btn {
+	padding: 0.5rem 2rem;
+	&-light {
+		color: $secondary;
+		background-color: #fff;
+		border-color: $secondary;
+		border-radius: 2px;
+
+	}
+	&-dark {
+		color: #fff;
+		background-color: $secondary;
+		border-color: $secondary;
+		border-radius: 2px;
+
+	}
+}
 
 .active {
 	color: #121212;

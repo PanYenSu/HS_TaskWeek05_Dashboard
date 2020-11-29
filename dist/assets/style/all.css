@@ -29,6 +29,12 @@ html, body {
 .h7 {
   font-size: 0.75rem; }
 
+.h8 {
+  font-size: 0.875rem; }
+
+.rounded01 {
+  border-radius: 2px; }
+
 .container {
   max-width: 918px;
   margin: 0 auto; }
@@ -379,11 +385,39 @@ html, body {
 .bg-black {
   background-color: #000; }
 
+.badge-primary01 {
+  color: #2A8356;
+  background-color: #EDF4EE; }
+
+.border-primary01 {
+  border: 1px solid #EDF4EE; }
+
+.border-dark {
+  border: 1px solid #bed7c1; }
+
+.border-secondary02 {
+  border: 1px solid #CDDDCD; }
+
+.btn {
+  padding: 0.5rem 2rem; }
+  .btn-light {
+    color: #2A8356;
+    background-color: #fff;
+    border-color: #2A8356;
+    border-radius: 2px; }
+  .btn-dark {
+    color: #fff;
+    background-color: #2A8356;
+    border-color: #2A8356;
+    border-radius: 2px; }
+
 .active {
   color: #121212; }
 
 .sideNav {
   padding: 32px; }
+  .sideNav-logo {
+    margin-bottom: 32px; }
   .sideNav-user img {
     width: 40px;
     height: 40px;
@@ -391,8 +425,6 @@ html, body {
   .sideNav-user p:nth-last-child(1) {
     font-size: 14px;
     color: #0000009A; }
-  .sideNav-title {
-    height: 104px; }
 
 .nav-link--active {
   color: #2A8356; }
@@ -401,29 +433,75 @@ html, body {
   color: #2A8356; }
 
 .assignment-header {
-  margin-top: 26px; }
+  margin-top: 26px;
+  margin-bottom: 32px; }
 
 .assignment-navbar-nav .material-icons:nth-last-child(1) {
   margin-left: 26px; }
 
-.assignment-main {
-  margin-top: 15px; }
-  .assignment-main .list-group-item {
-    border: 1px solid #CDDDCD; }
-    .assignment-main .list-group-item:hover {
-      background-color: #f8f8f8; }
-    .assignment-main .list-group-item span:nth-child(1) {
-      padding: 12px 12px 0 12px; }
-    .assignment-main .list-group-item span:nth-child(2) {
-      padding: 4px 12px 12px 12px; }
-    .assignment-main .list-group-item:nth-child(1) {
-      background: #EDF4EE; }
+.assignment-main .list-group-item {
+  border: 1px solid #CDDDCD; }
+  .assignment-main .list-group-item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; }
+  .assignment-main .list-group-item:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; }
+  .assignment-main .list-group-item:hover {
+    background-color: #f8f8f8; }
+  .assignment-main .list-group-item span:nth-child(1) {
+    padding: 12px 12px 0 12px; }
+  .assignment-main .list-group-item span:nth-child(2) {
+    padding: 4px 12px 12px 12px; }
+  .assignment-main .list-group-item:nth-child(1) {
+    background: #EDF4EE; }
 
 .assignment-comments-nav {
   background: #EDF4EE;
-  border: 1px solid #CDDDCD;
+  border-bottom: 1px solid #CDDDCD;
   padding: 12px; }
   .assignment-comments-nav h6 {
     padding-top: 4px; }
+
+.assignment-comments-content {
+  padding: 16px 32px 22px 16px; }
+  .assignment-comments-content-qusestion img, .assignment-comments-content-reply img {
+    width: 40px;
+    height: 40px;
+    border-radius: 24px; }
+
+.d-none {
+  display: none; }
+
+.btn-edit {
+  cursor: pointer; }
+
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar {
+  background: #EDF4EE; }
+
+.ck.ck-editor__editable_inline {
+  height: 220px; }
+  .ck.ck-editor__editable_inline p {
+    font-weight: lighter; }
+
+.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable, .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0; }
+
+.editor-btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.admin-header {
+  margin-top: 26px;
+  margin-bottom: 32px; }
+
+.admin-navbar-btn .material-icons {
+  color: #2A8356; }
+
+.admin-navbar-nav .material-icons:nth-last-child(1) {
+  margin-left: 26px; }
 
 /*# sourceMappingURL=all.css.map */

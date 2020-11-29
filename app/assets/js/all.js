@@ -14,7 +14,20 @@ $(document).ready(() => {
       );
     });
 
-    // $('.list-group-item-link').click(function(){
-    //   $(this).addClass("list-group-item-action");
-    // });
+
+
+    $('.btn-edit').click(function(){
+      $('.editor').removeClass('d-none')
+      $('.reply').addClass('d-none')
+      $('.assignment-footer').addClass('d-none')
+    });
+
+    $('.btn-cancel').click(function(){
+      $('.editor').addClass('d-none')
+      $('.reply').removeClass('d-none')
+      $('.assignment-footer').removeClass('d-none')
+    });
+
+    
 });
+
