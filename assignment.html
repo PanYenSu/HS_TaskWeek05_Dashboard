@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>Assignment</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
@@ -31,7 +31,7 @@
               question_answer
               </span>Question</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-assignmetn">
             <a class="nav-link pl-0 d-flex align-content-center" href="assignment.html">
               <span class="material-icons mr-3">
                 assignment
@@ -44,7 +44,7 @@
               </span>Course</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pl-0 d-flex align-content-center" href="#">
+            <a class="nav-link pl-0 d-flex align-content-center" href="admin.html">
               <span class="material-icons mr-3">
                 people_alt
               </span>Admin</a>
@@ -67,11 +67,10 @@
           </div>
         </div>
       </nav>
-      
 
-      <main class="col-9 ">
+      <main class="col-9 pr-4">
         <header class="container d-flex row assignment-header p-0">
-  <div class="col-2 d-flex align-items-center p-0">
+  <div class="assignment-header-title col-2 d-flex align-items-center p-0">
     <h2 class="h4 m-0 ">Assignment</h2>
   </div>
   
@@ -119,7 +118,6 @@
     <p class="font-weight-lighter h7 m-0">2 comments</p>
   </div>
 
-  
   <div class="row">
     <div class="col-4">
       <ul class="list-group">
@@ -177,26 +175,125 @@
         </li>
       </ul>
     </div>
-    <div class="assignment-comments col-8">
-      <div class="assignment-comments-nav ">
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <p class="h7 m-0">Chapter Assignment 2 / HTML&CSS</p>
-            <h6 class="h6">Please check this file for me, thanks!</h6>
-          </div>
-          <a href="">
-            <span class="material-icons">
-              more_vert
-              </span>
 
-          </a>
-            
+    <div class="col-8">
+      <div class="assignment-comments border border-secondary02 rounded01 p-0">
+        <div class="assignment-comments-nav">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <p class="h7 m-0">Chapter Assignment 2 / HTML&CSS</p>
+              <h6 class="h6">Please check this file for me, thanks!</h6>
             </div>
-      </div>
-    </div>
-  </div>
+            <a href="#">
+              <span class="material-icons">
+                more_vert
+                </span>
+            </a>         
+              </div>
+        </div>
 
+        <div class="assignment-comments-content">
+          <div class="assignment-comments-content-qusestion d-flex">
+            <img class='mr-2' src="/assets/images/emilywang.jpeg" alt="">
+            <div class="assignment-comments-content-qusestion-user border-bottom ">
+              <h6 class="h6 mb-1">Emily Wang</h6>
+              <p class="h7 font-weight-lighter">10:38 AM (4 hours ago)</h8>
+              <div class="h8">
+                Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                <span class="badge badge-primary01 font-weight-normal">div</span> is bigger than the height of the 
+                <span class="badge badge-primary01 font-weight-normal">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. 
+                <p class="h8">What is the gap or extra space below image?</p>
+              </div>                    
+              <a href="#" class="btn bg-primary01 active border-secondary02 rounded01 mb-3">
+                <div class="assignment-comments-content-qusestion-link d-flex ">
+                  <span class="material-icons">
+                    attach_file
+                    </span>
+                  <p class="h6 m-0">HW-2-David.zip</p>
+                </div>        
+              </a>
+            </div>
+          </div>
+
+          <div class="reply">
+            <div class="assignment-comments-content-reply d-flex mt-3">
+              <img class='mr-2' src="/assets/images/andychen.jpeg" alt="">
+              <div class="assignment-comments-content-reply-user border-bottom ">
+                <div class="d-flex justify-content-between">
+                  <h6 class="h6 mb-1">Andy Chen (You)</h6>
+                  <div>
+                    <span class="material-icons mr-3">
+                        star_border
+                    </span>
+                    <span class="material-icons mr-3 btn-edit ">
+                        create
+                    </span>
+                </div>
+              </div>               
+                <p class="h7 font-weight-lighter">13:24 AM (1 hours ago)</h8>
+                <div class="h8">
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.                
+                 <br> <p class="h8 mt-3">You can:</p>
+                  <ul>
+                    <li>adjust the 
+                      <span class="badge badge-primary01 font-weight-normal">
+                        vertical-align
+                      </span> of the image to position it elsewhere (e.g. the middle ) or. </li>
+                    <li>change the 
+                      <span class="badge badge-primary01 font-weight-normal">
+                        display
+                      </span> so it isn’t inline.</li>
+                  </ul>
+                </div>      
+              </div>
+            </div>
+          </div>        
+        </div>
+
+        <!-- CKEditor -->
+        <div class="editor d-none">
+          <textarea id="editor" class="" placeholder="Reply an answer…">
+          </textarea>
+          <div class="editor-btn-group mr-4">
+            <button type="button" class="btn-cancel btn btn-light mr-3" data-target="#replyEditor">Cancel</button>
+            <button type="button" class=" btn-edit btn btn-dark">Reply</button>       
+          </div>
+        </div>
+
+      </div>
+
+      <div class="assignment-footer">
+        <div class="assignment-comments-content-footer mt-3 mb-4 d-flex justify-content-between">
+          <nav aria-label="Page navigation example ">
+            <ul class="pagination justify-content-center align-items-center m-0">
+              <li class="page-item disabled mr-4 ">
+                <a class="align-middle" href="#" tabindex="-1" aria-disabled="true">
+                  <span class="material-icons">
+                    keyboard_arrow_left
+                    </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="" href="#">
+                  <span class="material-icons">
+                    keyboard_arrow_right
+                    </span>
+                </a>
+              </li>
+            </ul>
+          </nav>     
+          <div class="btn-group">
+            <button type="button" class="btn-cancel btn btn-light mr-3" data-target="#replyEditor">Mark as read</button>
+            <button type="button" class=" btn-edit btn btn-dark">Reply</button>      
+          </div>
+        </div>
+      </div>      
+    </div> 
+
+  </div>
 </main>
+
+
 
       </main>
     </div>
@@ -209,6 +306,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  
+
+<script>
+  ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+      .catch( error => {
+          console.error( error );
+      } );
+</script>
+
 </body>
 
 </html>
