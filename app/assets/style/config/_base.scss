@@ -12,6 +12,9 @@ html, body {
 a {
     color: #000;
     text-decoration: none;
+    :hover {
+      color: $secondary;
+    }
     
     // :hover {
     //     position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */

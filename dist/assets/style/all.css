@@ -10,6 +10,8 @@ html, body {
 a {
   color: #000;
   text-decoration: none; }
+  a :hover {
+    color: #2A8356; }
 
 img {
   display: block;
@@ -497,11 +499,13 @@ html, body {
 .admin-header {
   margin-top: 26px;
   margin-bottom: 32px; }
-
-.admin-navbar-btn .material-icons {
-  color: #2A8356; }
+  .admin-header-navbar-btn .material-icons {
+    color: #2A8356; }
 
 .admin-navbar-nav .material-icons:nth-last-child(1) {
   margin-left: 26px; }
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #EDF4EE; }
 
 /*# sourceMappingURL=all.css.map */
