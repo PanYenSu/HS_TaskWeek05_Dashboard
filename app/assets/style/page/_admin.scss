@@ -19,6 +19,16 @@
     }
 }
 
+
 .table tbody tr:hover td, .table tbody tr:hover th {
     background-color:  $primary01;
+}
+
+.admin-main-id {
+    
+    .material-icons {
+        font-style: 12px;
+        color: $secondary;
+    }
+
 }

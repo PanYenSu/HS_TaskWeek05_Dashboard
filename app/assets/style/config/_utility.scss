@@ -73,3 +73,32 @@ $properties: (
   }
 }
 
+// week05
+
+.h7 {
+	font-size: 0.75rem;   //12
+  }
+  .h8 {
+	font-size: 0.875rem;   //14
+  }
+  .rounded01 {
+	border-radius: 2px;
+  }
+  .material-icons{
+	&.md-12 { 
+	  font-size: 12px; 
+	}
+	&.md-18 { 
+	  font-size: 18px; 
+	}
+	&.md-36 { 
+	  font-size: 36px; 
+	}
+	&.md-40 { 
+	  font-size: 40px; 
+	}
+	&.md-48 { 
+	  font-size: 48px; 
+	}
+  }
+
