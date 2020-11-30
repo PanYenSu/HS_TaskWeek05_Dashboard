@@ -10,6 +10,8 @@ html, body {
 a {
   color: #000;
   text-decoration: none; }
+  a :hover {
+    color: #2A8356; }
 
 img {
   display: block;
@@ -25,15 +27,6 @@ textarea {
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px; }
-
-.h7 {
-  font-size: 0.75rem; }
-
-.h8 {
-  font-size: 0.875rem; }
-
-.rounded01 {
-  border-radius: 2px; }
 
 .container {
   max-width: 918px;
@@ -303,6 +296,30 @@ html, body {
 .pr-10 {
   padding-right: 80px; }
 
+.h7 {
+  font-size: 0.75rem; }
+
+.h8 {
+  font-size: 0.875rem; }
+
+.rounded01 {
+  border-radius: 2px; }
+
+.material-icons.md-12 {
+  font-size: 12px; }
+
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-40 {
+  font-size: 40px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
 .d-flex {
   display: flex; }
 
@@ -497,11 +514,17 @@ html, body {
 .admin-header {
   margin-top: 26px;
   margin-bottom: 32px; }
-
-.admin-navbar-btn .material-icons {
-  color: #2A8356; }
+  .admin-header-navbar-btn .material-icons {
+    color: #2A8356; }
 
 .admin-navbar-nav .material-icons:nth-last-child(1) {
   margin-left: 26px; }
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #EDF4EE; }
+
+.admin-main-id .material-icons {
+  font-style: 12px;
+  color: #2A8356; }
 
 /*# sourceMappingURL=all.css.map */

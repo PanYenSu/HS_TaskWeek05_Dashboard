@@ -194,7 +194,7 @@
 
         <div class="assignment-comments-content">
           <div class="assignment-comments-content-qusestion d-flex">
-            <img class='mr-2' src="/assets/images/emilywang.jpeg" alt="">
+            <img class='mr-2' src="./assets/images/emilywang.jpeg" alt="">
             <div class="assignment-comments-content-qusestion-user border-bottom ">
               <h6 class="h6 mb-1">Emily Wang</h6>
               <p class="h7 font-weight-lighter">10:38 AM (4 hours ago)</h8>
@@ -217,17 +217,21 @@
 
           <div class="reply">
             <div class="assignment-comments-content-reply d-flex mt-3">
-              <img class='mr-2' src="/assets/images/andychen.jpeg" alt="">
+              <img class='mr-2 img-fluid' src="./assets/images/andychen.jpeg" alt="">
               <div class="assignment-comments-content-reply-user border-bottom ">
                 <div class="d-flex justify-content-between">
                   <h6 class="h6 mb-1">Andy Chen (You)</h6>
                   <div>
-                    <span class="material-icons mr-3">
+                    <a class="mr-3" href="#">
+                      <span class="material-icons">
                         star_border
-                    </span>
-                    <span class="material-icons mr-3 btn-edit ">
+                      </span>
+                    </a>                   
+                    <a class="mr-3 btn-edit" href="#">
+                      <span class="material-icons">
                         create
-                    </span>
+                      </span>
+                    </a>                   
                 </div>
               </div>               
                 <p class="h7 font-weight-lighter">13:24 AM (1 hours ago)</h8>
@@ -254,7 +258,7 @@
         <div class="editor d-none">
           <textarea id="editor" class="" placeholder="Reply an answer…">
           </textarea>
-          <div class="editor-btn-group mr-4">
+          <div class="editor-btn-group mr-4 ">
             <button type="button" class="btn-cancel btn btn-light mr-3" data-target="#replyEditor">Cancel</button>
             <button type="button" class=" btn-edit btn btn-dark">Reply</button>       
           </div>
