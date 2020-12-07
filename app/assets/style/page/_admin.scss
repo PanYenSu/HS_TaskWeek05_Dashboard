@@ -24,11 +24,31 @@
     background-color:  $primary01;
 }
 
-.admin-main-id {
-    
+.admin-main-id {   
     .material-icons {
         font-style: 12px;
         color: $secondary;
+    }
+}
+.admin-pagination {
+    .page-item.disabled .page-link {
+        border-color: $secondary;
+    }
+    .page-item.active .page-link {
+        background-color: $secondary;
+    }
+    .page-link {
+        color: #000;
+        border: 1px solid $secondary;
+    }
+}
+.modal {
+    &-content {
+        padding: 32px 32px 16px 32px;
+    }
+    
+    .form-control {
+        height: 51px;
     }
 
 }

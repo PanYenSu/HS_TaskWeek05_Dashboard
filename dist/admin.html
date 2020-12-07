@@ -69,95 +69,330 @@
       </nav>
 
       <main class="col-9 pr-4">
-        <header class="container d-flex admin-header p-0">
-    <div class="admin-navbar container d-flex justify-content-between p-0">
-
-
-        <div class="admin-header-title d-flex align-items-center p-0 ">
-        <h2 class="h4 m-0 mr-5">Admin</h2>    
-            <a class="admin-header-navbar-btn btn p-0  d-flex align-items-center" >
-                <span class="material-icons mr-2">
-                    add
-                    </span>
-                <p class="m-0 font-weight-bolder">Add New Admin</p>
-            </a>
-        </div>
-        <div>
-            <ul class="navbar-nav admin-navbar-nav flex-row ">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                    <span class="material-icons">
-                        search
+        <div class="container">
+    <header class="d-flex admin-header p-0">
+        <div class="admin-navbar container d-flex justify-content-between p-0">
+    
+    
+            <div class="admin-header-title d-flex align-items-center p-0 ">
+            <h2 class="h4 m-0 mr-5">Admin</h2>    
+                <a data-toggle="modal" data-target="#newAdminModal" class="admin-header-navbar-btn btn p-0  d-flex align-items-center" >
+                    <span class="material-icons mr-2">
+                        add
                         </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                    <span class="material-icons">
-                        notifications_active
-                        </span>
-                    </a>
-                </li>
-                </ul>
-        </div> 
-        </div>
-  </header>
-  <main class="container admin-main p-0">
-    <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">ID
-                <a class="admin-main-id" href="#">
-                    <span class="material-icons md-12">
-                        south
-                        </span>
+                    <p class="m-0 font-weight-bolder">Add New Admin</p>
                 </a>
-            </th>
-            <th scope="col">Name</th>
-            <th scope="col">Email </th>
-            <th scope="col">Verified</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">#1</th>
-            <td>Emir Wicks</td>
-            <td>emir.wicks@mail.com               </td>
-            <td>Yes</td>
-            <td>
-                <div class="d-flex justify-content-end">
-                    <a href="#">
-                        <span class="material-icons mr-4">
-                            visibility
-                        </span>
-                    </a>
-                    <a href="#" class="admin-main-edit">
+            </div>
+            <div>
+                <ul class="navbar-nav admin-navbar-nav flex-row ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                         <span class="material-icons">
-                            create
-                        </span>
+                            search
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <span class="material-icons">
+                            notifications_active
+                            </span>
+                        </a>
+                    </li>
+                    </ul>
+            </div> 
+            </div>
+      </header>
+      <main class="admin-main p-0">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">ID
+                    <a class="admin-main-id" href="#">
+                        <span class="material-icons md-12">
+                            south
+                            </span>
                     </a>
-                    
-                </div>
-                
-            </td>                                                                        </td>
-          </tr>
-          <tr>
-            <th scope="row">#2</th>
-            <td>Zaina Goldsmith</td>
-            <td>zaina.goldsmith@mail.com </td>
-            <td>yes</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table> 
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Email </th>
+                <th scope="col">Verified</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com               </td>
+                <td>Yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td>                                                                        </td>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+              <tr>
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>zaina.goldsmith@mail.com </td>
+                <td>yes</td>
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <span class="material-icons mr-4">
+                                visibility
+                            </span>
+                        </a>
+                        <a href="#" class="admin-main-edit">
+                            <span class="material-icons">
+                                create
+                            </span>
+                        </a>                    
+                    </div>              
+                </td> 
+              </tr>
+            </tbody>
+          </table> 
+      </main>
+    
+      <nav aria-label="Page navigation example ">
+        <ul class="admin-pagination pagination justify-content-end ">
+          <li class="page-item disabled ">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+              <
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              >
+            </a>
+          </li>
+        </ul>
+      </nav>
+</div>
 
-  </main>
+<!-- New Admin -->
+<div class="modal fade" id="newAdminModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-0">
+        <div class="modal-header border-bottom-0 p-0">
+          <h5 class="modal-title h4  mb-6" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          
+
+        </div>
+        <div class="modal-body p-0">
+            <div class="modal-body-account border-bottom">
+                <p class="h5 mb-3">Account</p>
+                <form class="mb-4">
+                <div class="form-group">
+                    <label class="h8" for="Name">Name</label>
+                    <input type="text" class="form-control rounded-0" id="Name" >             
+                </div>
+                <div class="form-group">
+                    <label class="h8" for="Email">Email</label>
+                    <input type="email" class="form-control rounded-0" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                </form>
+            </div>
+            <div class="modal-body-verification">
+                <p class="h5">Verification</p>
+                <!-- <form class="mb-4">
+                    <div class="form-group">
+                        <label class="h6" for="unverified">unverified</label>
+                        <input type="button" class="form-control rounded-0" id="unverified"  value="Send Verification Mail" />            
+                    </div>                    
+                    </form> -->
+                <button type="button" class="btn-cancel btn btn-light mr-3 btn-block" data-target="">Send Verification Mail</button>
+            </div>
+
+            
+
+        </div>
+        <div class="modal-footer p-0">
+            <button type="button" class="btn-cancel btn btn-light mr-3" data-target="">Cancel</button>
+            <button type="button" class=" btn-edit btn btn-dark">Add</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
       </main>
     </div>
 
