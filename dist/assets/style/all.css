@@ -312,9 +312,15 @@ html, body {
 .bg-black {
   background-color: #000; }
 
+.bg-secondary02 {
+  background-color: #EDF4EE; }
+
 .badge-primary01 {
   color: #2A8356;
   background-color: #EDF4EE; }
+
+.badge-secondary02 {
+  background-color: #CDDDCD; }
 
 .border-primary01 {
   border: 1px solid #EDF4EE; }
@@ -336,6 +342,11 @@ html, body {
     color: #fff;
     background-color: #2A8356;
     border-color: #2A8356;
+    border-radius: 2px; }
+  .btn-outline-pink {
+    color: #E3006E;
+    background-color: #fff;
+    border-color: #E3006E;
     border-radius: 2px; }
 
 .active {
@@ -450,7 +461,14 @@ html, body {
 .modal-content {
   padding: 32px 32px 16px 32px; }
 
-.modal .form-control {
+.modal .form-control, .modal .btn-send {
   height: 51px; }
+
+.modal-body-view img {
+  width: 141px;
+  height: 141px; }
+
+.modal-body-view .btn.focus, .modal-body-view .btn:focus {
+  box-shadow: none; }
 
 /*# sourceMappingURL=all.css.map */

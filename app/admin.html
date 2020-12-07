@@ -63,7 +63,7 @@ current: admin
                 <td>Yes</td>
                 <td>
                     <div class="d-flex justify-content-end">
-                        <a href="#">
+                        <a href="#" data-target="#viewModal" data-toggle="modal">
                             <span class="material-icons mr-4">
                                 visibility
                             </span>
@@ -284,15 +284,12 @@ current: admin
     <div class="modal-dialog" role="document">
       <div class="modal-content rounded-0">
         <div class="modal-header border-bottom-0 p-0">
-          <h5 class="modal-title h4  mb-6" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title h4  mb-6" id="newAdminModalLabel">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-
-          
-
         </div>
-        <div class="modal-body p-0">
+        <div class="modal-body p-0 mb-6">
             <div class="modal-body-account border-bottom">
                 <p class="h5 mb-3">Account</p>
                 <form class="mb-4">
@@ -306,23 +303,76 @@ current: admin
                 </div>
                 </form>
             </div>
-            <div class="modal-body-verification">
-                <p class="h5">Verification</p>
+
+            <div class="modal-body-verification mt-4 border-bottom pb-4">
+                <p class="h5 mb-3">Verification</p>
                 <!-- <form class="mb-4">
                     <div class="form-group">
                         <label class="h6" for="unverified">unverified</label>
                         <input type="button" class="form-control rounded-0" id="unverified"  value="Send Verification Mail" />            
                     </div>                    
                     </form> -->
-                <button type="button" class="btn-cancel btn btn-light mr-3 btn-block" data-target="">Send Verification Mail</button>
+                    <div class="d-flex mb-3 ">
+                        <span class="material-icons text-danger">
+                            warning
+                        </span>
+                        <p class="ml-2 mb-0">Unverified</p>
+                    </div>                 
+                <button type="button" class="btn-send btn btn-light mr-3 btn-block rounded-0" data-target="">Send Verification Mail</button>
             </div>
 
-            
-
+            <div class="modal-body-accessLevel mt-4 border-bottom">
+                <div class="form-group">
+                    <label class="h5 mb-3" for="accessLevel">Access Level</label>
+                    <select class="form-control rounded-0 px-3" id="accessLevel"  placeholder="-Choose access level-">
+                        <option selected>-Choose access level-</option>
+                    </select>
+                  </div>
+            </div>
         </div>
-        <div class="modal-footer p-0">
+        <div class="modal-footer p-0 py-3">
             <button type="button" class="btn-cancel btn btn-light mr-3" data-target="">Cancel</button>
             <button type="button" class=" btn-edit btn btn-dark">Add</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- view Modal -->
+<div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content m-6 rounded-0">
+        <div class="modal-body modal-body-view d-flex p-0">
+            <div class="media w-100">
+                <img src="/assets/images/emir.jpeg" class="mr-4" alt="...">
+                <div class="media-body ">
+                    <div class="modal-title d-flex justify-content-between mb-2">
+                        <h5 class="modal-title mt-0 h6">#1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <p class="h6 m-0">Admin</p>
+                    <p class="h4 mb-2">Emir Wicks</p>
+                    <p class="h8 font-weight-light">emir.wicks@mail.com</p>
+                    <a class="btn view-btn d-flex justify-content-between p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <p class="h8 bg-secondary02">verified</p> 
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+
+                      </a>
+                  
+                </div>
+              </div>
+
+              <!-- <div class="collapse" id="collapseExample">      -->
+
+        </div>
+        <div class="modal-footer collapse" id="collapseExample">
+            <button type="button" class="btn-cancel btn btn-outline-pink mr-3" data-target="">Deactivate</button>
+            <button type="button" class=" btn-edit btn btn-dark">Edit</button> 
         </div>
       </div>
     </div>

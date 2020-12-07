@@ -47,8 +47,24 @@
         padding: 32px 32px 16px 32px;
     }
     
-    .form-control {
+    .form-control, .btn-send {
         height: 51px;
+    }
+    &-body-view {
+        img {
+            width: 141px;
+            height: 141px;
+        }
+        // .view-btn:not(:disabled):not(.disabled) {
+        //     cursor: pointer;      
+        // }
+        // a:hover {
+        //     color: #000;
+        // text-decoration: none;
+        //   }
+        .btn.focus, .btn:focus  {
+            box-shadow: none ;
+        }
     }
 
 }
