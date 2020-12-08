@@ -471,4 +471,7 @@ html, body {
 .modal-body-view .btn.focus, .modal-body-view .btn:focus {
   box-shadow: none; }
 
+.modal-body-view .btn-verifie p {
+  padding: 4px 8px; }
+
 /*# sourceMappingURL=all.css.map */

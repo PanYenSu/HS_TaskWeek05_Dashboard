@@ -55,15 +55,13 @@
             width: 141px;
             height: 141px;
         }
-        // .view-btn:not(:disabled):not(.disabled) {
-        //     cursor: pointer;      
-        // }
-        // a:hover {
-        //     color: #000;
-        // text-decoration: none;
-        //   }
         .btn.focus, .btn:focus  {
             box-shadow: none ;
+        }
+        .btn-verifie {
+            p {
+                padding: 4px 8px;
+            }
         }
     }
 
