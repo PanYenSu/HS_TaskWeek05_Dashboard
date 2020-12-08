@@ -14,10 +14,13 @@
 <body>
   <div class="container-fluid">
 
-    <div class="row">
-      <nav class="sideNav col-3 bg-primary01 d-flex flex-column justify-content-between">
+    <!-- <div class="row"> -->
+      <nav class="sideNav bg-primary01 d-flex flex-column justify-content-between position-fixed">
         <div class="">
-          <h1><img class="sideNav-logo" src="./assets/images/logo-ANSWER.svg" alt=""></h1>
+          <a href="#">
+            <h1><img class="sideNav-logo" src="./assets/images/logo-ANSWER.svg" alt=""></h1>
+          </a>
+          
         <ul class="nav d-flex flex-column font-weight-bolder">
           <li class="nav-item ">
               <a class="nav-link active pl-0 d-flex align-content-center" href="#">
@@ -68,10 +71,10 @@
         </div>
       </nav>
 
-      <main class="col-9 pr-4">
+      <main class="main-layout pr-4 position-absolute">
         <%- contents %>
       </main>
-    </div>
+    <!-- </div> -->
 
   </div>
 

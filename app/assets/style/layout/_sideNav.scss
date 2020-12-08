@@ -1,6 +1,10 @@
 .sideNav {
-    // height: 800px;
+    min-width: 300px;
+    // min-hight: 100vh;
+    height: 100%;
+    z-index: 3;
     padding: 32px;
+    left: 0;
     &-logo {
         margin-bottom: 32px;
     }
@@ -23,4 +27,8 @@
     &:hover {
         color: $secondary;
     }
+}
+.main-layout {
+    right: 0;
+    width: calc(100% - 300px);
 }
