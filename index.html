@@ -14,10 +14,13 @@
 <body>
   <div class="container-fluid">
 
-    <div class="row">
-      <nav class="sideNav col-3 bg-primary01 d-flex flex-column justify-content-between">
+    <!-- <div class="row"> -->
+      <nav class="sideNav bg-primary01 d-flex flex-column justify-content-between position-fixed">
         <div class="">
-          <h1><img class="sideNav-logo" src="/assets/images/logo-ANSWER.svg" alt=""></h1>
+          <a href="#">
+            <h1><img class="sideNav-logo" src="./assets/images/logo-ANSWER.svg" alt=""></h1>
+          </a>
+          
         <ul class="nav d-flex flex-column font-weight-bolder">
           <li class="nav-item ">
               <a class="nav-link active pl-0 d-flex align-content-center" href="#">
@@ -60,7 +63,7 @@
         </div>
         
         <div class="sideNav-user d-flex align-items-center">
-          <img class="mr-3" src="/assets/images/andychen.jpeg" alt="">
+          <img class="mr-3" src="./assets/images/andychen.jpeg" alt="">
           <div class="sideNav-user-info">
             <p class="pb-1 m-0">Andy Chen</p>
             <p class="m-0 ">andy0401@mail.com</p>
@@ -68,7 +71,7 @@
         </div>
       </nav>
 
-      <main class="col-9 pr-4">
+      <main class="main-layout pr-4 position-absolute">
         
 <h1>
   這是一段話
@@ -76,7 +79,7 @@
 
 <div class="box"></div>
       </main>
-    </div>
+    <!-- </div> -->
 
   </div>
 
@@ -98,6 +101,6 @@
       } );
 </script>
 
-</body>
+</body>  
 
 </html>

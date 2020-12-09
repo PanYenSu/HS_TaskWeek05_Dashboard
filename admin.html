@@ -14,10 +14,13 @@
 <body>
   <div class="container-fluid">
 
-    <div class="row">
-      <nav class="sideNav col-3 bg-primary01 d-flex flex-column justify-content-between">
+    <!-- <div class="row"> -->
+      <nav class="sideNav bg-primary01 d-flex flex-column justify-content-between position-fixed">
         <div class="">
-          <h1><img class="sideNav-logo" src="/assets/images/logo-ANSWER.svg" alt=""></h1>
+          <a href="#">
+            <h1><img class="sideNav-logo" src="./assets/images/logo-ANSWER.svg" alt=""></h1>
+          </a>
+          
         <ul class="nav d-flex flex-column font-weight-bolder">
           <li class="nav-item ">
               <a class="nav-link active pl-0 d-flex align-content-center" href="#">
@@ -60,7 +63,7 @@
         </div>
         
         <div class="sideNav-user d-flex align-items-center">
-          <img class="mr-3" src="/assets/images/andychen.jpeg" alt="">
+          <img class="mr-3" src="./assets/images/andychen.jpeg" alt="">
           <div class="sideNav-user-info">
             <p class="pb-1 m-0">Andy Chen</p>
             <p class="m-0 ">andy0401@mail.com</p>
@@ -68,7 +71,7 @@
         </div>
       </nav>
 
-      <main class="col-9 pr-4">
+      <main class="main-layout pr-4 position-absolute">
         <div class="container">
     <header class="d-flex admin-header p-0">
         <div class="admin-navbar container d-flex justify-content-between p-0">
@@ -421,10 +424,13 @@
                     <p class="h6 m-0">Admin</p>
                     <p class="h4 mb-2">Emir Wicks</p>
                     <p class="h8 font-weight-light">emir.wicks@mail.com</p>
-                    <a class="btn view-btn d-flex justify-content-between p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        <p class="h8 bg-secondary02">verified</p> 
-                        <span class="material-icons">
+                    <a class="btn btn-verifie d-flex justify-content-between p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <p class="h8 bg-secondary02">Verified</p> 
+                        <span class="material-icons verifie-show">
                             keyboard_arrow_down
+                        </span>
+                        <span class="material-icons verifie-hide d-none">
+                            keyboard_arrow_up
                         </span>
 
                       </a>
@@ -444,7 +450,7 @@
   </div>
 
       </main>
-    </div>
+    <!-- </div> -->
 
   </div>
 
@@ -466,6 +472,6 @@
       } );
 </script>
 
-</body>
+</body>  
 
 </html>
